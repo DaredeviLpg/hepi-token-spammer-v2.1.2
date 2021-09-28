@@ -84,9 +84,6 @@ print("checking tokens...")
 for x in tokens:
   t = threading.Thread(target=checkTokens, args=(x,)).start()
 
-with open("tokeninfo.json", "w") as l:
-  json.dump(g, l, indent=2)
-
 validTokens = validTokens
 
 time.sleep(1)
@@ -186,6 +183,9 @@ threading.Thread(target=loop.run_forever).start()
 
 time.sleep(1)
 clear()
+
+with open("tokeninfo.json", "w") as l:
+  json.dump(g, l, indent=2)
 
 while True:
     print(epik)
