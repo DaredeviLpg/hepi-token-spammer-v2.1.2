@@ -2,7 +2,7 @@ spam_msg="""
 spam message
 """
 multithred_daemon = True #true or false, this dosent affect the speed
-_status = "status text"
+status = "status text"
 
 embed=dict(
 title="embed title",
