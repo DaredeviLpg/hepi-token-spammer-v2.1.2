@@ -29,7 +29,7 @@ from config import * # star import, if you see a green line just ignore it
 os.system("pip install PyNaCl") # only required for vc stuff
 
 with open("tokens.txt", "r") as f:
-  tokens = f.read().split(";")[1].split("\n")
+  tokens = f.read().split("\n")
 
 def clear():
   os.system("cls" if os.name == "nt" else "clear")
