@@ -175,7 +175,7 @@ bots = []
 
 loop = asyncio.get_event_loop()
 for token in validTokens:
-  bot = discord.Client(status=discord.Status.idle, activity=discord.Streaming(name=_status, url="https://twitch.tv/vissionlol"))
+  bot = discord.Client(status=discord.Status.idle, activity=discord.Streaming(name=status, url="https://twitch.tv/vissionlol"))
   loop.create_task(bot.start(token, bot=False))
   bots.append(bot)
 
