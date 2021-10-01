@@ -196,7 +196,18 @@ while True:
     if opt == "1 b":
       os.system("python ms_bypasser.py")
     if opt == "1 c":
-      os.system("python leaver.py")
+      guilds = []
+      g = input("Guild id\n>")
+      for x in bots:
+          guild = x.get_guild(int(g))
+          guilds.append(guild)
+      for guild in guilds:
+          try:
+            loop = asyncio.get_event_loop()
+            loop.create_task(guild.leave())
+            loop.run_until_complete("yes")
+          except:
+            pass
     elif opt == "2":
       speed = input("[1] regular spam\n[2] thread spam\n[3] multithread spam(fastest)\n>")
       clear()
