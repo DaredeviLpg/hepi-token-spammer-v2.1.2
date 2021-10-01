@@ -2,7 +2,7 @@
 - this is an easy to use spammer, it dosent have a million files like other spammers lmao
 - put your tokens on tokens.txt file.
 - go to config.py and configurate the spam msg, status and the embed.
-- joiner, membership screening bypass and leaver is slow but it does not phonelock the tokens, use email verified tokens if possible.
+- joiner and membership screening bypass is slow but it does not phonelock the tokens, use email verified tokens if possible.
 
 ### ways to get tokens
 - manually creating an account and get the token, heres a tutorial: https://youtu.be/YEgFvgg7ZPI
@@ -13,3 +13,6 @@
 python main.py
 ```
 if some indian person tries to skid this, join [my server](https://discord.gg/BffEDZZ5) and create a ticket.
+
+[UPDATE 1/10/21]
+leaver is now faster since i use dpy
